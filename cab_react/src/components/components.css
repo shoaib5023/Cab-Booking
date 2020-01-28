@@ -1,0 +1,77 @@
+.home {
+    text-align: center;
+}
+
+/* .home-content {
+    display: flex;
+ 
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: blanchedalmond;
+   
+    border:black solid 2px;
+  
+} */
+.home-content {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    /* margin-top:0; */
+    margin-right:auto;
+    margin-bottom:0;
+    margin-left:auto;
+    top: 30%;
+    left: 40%;
+    background-color: blanchedalmond;
+}
+
+.driver-home {
+    text-align: center;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;status
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.settings {
+    margin-top: 50px;
+    font-size: 40px;
+}
