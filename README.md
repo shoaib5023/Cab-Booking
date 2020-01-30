@@ -49,7 +49,7 @@ source .env/bin/activate
 Once the repository is cloned and virtual environment set up, go to the directory where the requirements.txt(Catalogue-management-system/backend/) is and type the following code in your terminal:
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Database setup
