@@ -32,7 +32,7 @@ psycopg2==2.7.4
 Clone the repository
 
 ```
-git clone https://github.com/Shoaibfy/Cab_Allocation/.git
+git clone https://github.com/Shoaibfy/Cab-Booking/.git
 ```
 
 Setting up your virtual environment:
