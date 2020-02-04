@@ -1,11 +1,11 @@
 from django.urls import path
-from.import views
+from .import views
+from .views import *
 
 urlpatterns = [
     path("adduser/",views.adduser),
     path("adddriver/",views.adddriver),
     path("get_ride_details/",views.get_ride_details),
-    path("login_user/",views.login_user),
     path("login_user/",views.login_user),
     path("login_driver/",views.login_driver),
     path("login_status/",views.get_session_details),

@@ -111,7 +111,7 @@ def get_ride_details(request):
         where+=" and us.name='"+request.session.get("user")+"'"
     if "driver" in request.session:
         where+=" and ride_type='rq' or (dr.name='"+request.session.get("driver")+"' and ride_type!='rq')"
-    query='SELECT ride.id,us.name AS user,dr.name AS driver,date_time,ride_type,vehicle_number from "cabApi_ride" AS ride INNER JOIN "cabApi_user" AS us ON ride.user_id=us.id LEFT JOIN "cabApi_driver" AS dr ON ride.driver_id=dr.id '+where
+    query='SELECT ride.id,us.login_user/ name AS user,dr.name AS driver,date_time,ride_type,vehicle_number from "cabApi_ride" AS ride INNER JOIN "cabApi_user" AS us ON ride.user_id=us.id LEFT JOIN "cabApi_driver" AS dr ON ride.driver_id=dr.id '+where
     print(query)
     return HttpResponse(make_query(query),content_type="text/json")
     
@@ -124,7 +124,8 @@ def login_user(request):
             name = request.POST.get('user', None)
             if(User.objects.filter(name=name).count()):
                 request.session["user"]=name
-                return HttpResponse("pass",content_type="text")
+                return HttpResponse("pass",content_type="text")let right = 0;
+    let wrong = 0;
             else:
                 return HttpResponse("block",content_type="text")
         except Exception as e:

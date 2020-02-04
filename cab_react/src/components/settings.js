@@ -65,7 +65,7 @@ class Settings extends React.Component {
         return (
             <div className="settings-page">
                 <div className="driver-header">
-                Welcome to the Settings page
+                <h3>Welcome to the Settings page</h3>
                 <NavLink to="/">Home</NavLink>
                 </div>
                 <div className="creating-user">
